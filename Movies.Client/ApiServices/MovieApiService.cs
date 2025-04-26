@@ -24,7 +24,8 @@ namespace Movies.Client.ApiServices
 
             HttpClient httpClient = _httpClientFactory.CreateClient("MovieAPIClient");
 
-            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "api/Movies");
+            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "movies"); // API GATEWAY URL
+            //HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "api/movies"); // API DIRECT URL
 
             HttpResponseMessage response = await httpClient.SendAsync(request, 
                                                                       HttpCompletionOption.ResponseHeadersRead)
