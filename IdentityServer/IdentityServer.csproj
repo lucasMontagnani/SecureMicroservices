@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Duende.IdentityServer" Version="7.2.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>
